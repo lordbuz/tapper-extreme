@@ -50,6 +50,9 @@
                                     <constraint firstAttribute="width" constant="249" id="ybd-nN-29B"/>
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8g-pQ-JYg"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xg5-xX-M5d">
                                 <rect key="frame" x="135" y="340" width="331" height="45"/>
@@ -67,6 +70,9 @@
                                     <constraint firstAttribute="width" constant="172" id="wp4-rD-9dx"/>
                                 </constraints>
                                 <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="onCoinTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zws-nM-9Qb"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2an-13-cY0" userLabel="Tap Number">
                                 <rect key="frame" x="20" y="238" width="560" height="46"/>
@@ -114,6 +120,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="howManyTapsTxt" destination="xg5-xX-M5d" id="UNL-Em-GTI"/>
+                        <outlet property="logoImg" destination="Niz-GK-eKb" id="LVL-PN-0lO"/>
+                        <outlet property="playBtn" destination="sGK-wg-tkJ" id="xcK-dL-UMn"/>
+                        <outlet property="tapBtn" destination="iAr-yP-w4X" id="HZw-tW-8X4"/>
+                        <outlet property="tapsLbl" destination="2an-13-cY0" id="Pac-vy-eSP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
